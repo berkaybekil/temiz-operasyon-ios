@@ -1,0 +1,6 @@
+framework module Pods_TemizOperasyonUITests {
+  umbrella header "Pods-TemizOperasyonUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

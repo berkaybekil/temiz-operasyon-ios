@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import Bagel
+import IQKeyboardManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +18,56 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+        // Start Bagel
+        Bagel.start()
+        
+        // Implement IQKeyboardManager
+        IQKeyboardManager.shared().isEnabled = true
+        IQKeyboardManager.shared().shouldResignOnTouchOutside = true
+        
+        if ((UserDefaults.standard.string(forKey: "userToken")) != nil) {
+
+            DataManager.userToken = UserDefaults.standard.string(forKey: "userToken")!
+            DataManager.userName = UserDefaults.standard.string(forKey: "userName")!
+            DataManager.userID = UserDefaults.standard.integer(forKey: "userID")
+            DataManager.userType = UserDefaults.standard.integer(forKey: "userType")
+            
+            if DataManager.userType == 8 {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                
+                let initialViewController = storyboard.instantiateViewController(withIdentifier: "operationBag")
+
+                self.window?.rootViewController = initialViewController
+                self.window?.makeKeyAndVisible()
+            } else {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                
+                let initialViewController = storyboard.instantiateViewController(withIdentifier: "operation")
+
+                self.window?.rootViewController = initialViewController
+                self.window?.makeKeyAndVisible()
+            }
+ 
+            
+
+
+        } else {
+
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "login")
+
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+
+        }
+        
+        FirebaseApp.configure()
+        
+        
         return true
     }
 
