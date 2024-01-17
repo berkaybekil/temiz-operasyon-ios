@@ -11,7 +11,7 @@ import SwiftyCam
 import AVFoundation
 
 
-class TakePictureViewController: UIViewController {
+class TakePictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // Name and ID area
     @IBOutlet weak var nameLbl: UILabel!
@@ -23,9 +23,14 @@ class TakePictureViewController: UIViewController {
     
     // Sent Popup
     @IBOutlet weak var sentPopup: UIView!
+    @IBOutlet weak var pickupImageButton: UIButton!
+    
     
     // Loading View
     @IBOutlet weak var loadingView: UIView!
+    
+    // Image Picker
+    var imagePicker = UIImagePickerController()
     
     
     // Camera Manager
@@ -152,6 +157,55 @@ class TakePictureViewController: UIViewController {
         } else {
             self.dismiss(animated: true, completion: nil)
         }
+        
+    }
+    
+    @IBAction func pickupImagePressed(_ sender: Any) {
+        
+        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
+                    print("Button capture")
+
+                    imagePicker.delegate = self
+                    imagePicker.sourceType = .savedPhotosAlbum
+                    imagePicker.allowsEditing = false
+
+                    present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+                self.dismiss(animated: true, completion: { () -> Void in
+
+                    let photo = image
+                    DataManager.takenImage = photo
+                    
+                    if DataManager.isComingFromDemagedProduct {
+                        self.performSegue(withIdentifier: "selectReason", sender: nil)
+                    } else if DataManager.isComingFromShoeRepair {
+                        self.performSegue(withIdentifier: "goShoeDemageReason", sender: nil)
+                    } else if DataManager.isComingFromStatusReady{
+                        // Change status here
+                        
+                        self.changeStatus()
+                    } else {
+                        self.navigationController?.popViewController(animated: true)
+                    }
+                    
+                })
+            
+            
+        }
+
+        picker.dismiss(animated: true, completion: nil);
+    }
+    
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
+        
+        
+
         
     }
     

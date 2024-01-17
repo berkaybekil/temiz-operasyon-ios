@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bMQ-an-25s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bMQ-an-25s">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ApprovedListCell" rowHeight="360" id="DME-hS-ogJ" customClass="ApprovedListCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="360"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="360"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DME-hS-ogJ" id="Hcr-Tb-l6B">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="360"/>
@@ -166,7 +166,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusCell" id="F4t-hC-6h4" customClass="statusCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="24.5" width="240" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="240" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F4t-hC-6h4" id="ibH-KM-Rsn">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
@@ -316,7 +316,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdg-po-sX5">
-                                <rect key="frame" x="240" y="22" width="60" height="30"/>
+                                <rect key="frame" x="240" y="42" width="60" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.6705882353" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="9gX-6V-vXU"/>
@@ -333,12 +333,12 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XZM-Kg-dd7">
-                                <rect key="frame" x="20" y="60" width="280" height="488"/>
+                                <rect key="frame" x="20" y="80" width="280" height="468"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.0" green="0.6705882353" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="detailCell" rowHeight="200" id="sIA-76-eGC" customClass="detailCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="280" height="200"/>
+                                        <rect key="frame" x="0.0" y="50" width="280" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sIA-76-eGC" id="ybo-Mg-fY4">
                                             <rect key="frame" x="0.0" y="0.0" width="280" height="200"/>
@@ -672,7 +672,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DemageReasonCell" id="y7V-m1-CCK" customClass="DemageReasonCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y7V-m1-CCK" id="cU1-zq-KEP">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -826,7 +826,7 @@
             <objects>
                 <viewController id="KeI-xh-bJ6" customClass="ProductListViewController" customModule="TemizOperasyon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RLW-I3-7lc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6L-MU-S1A">
@@ -847,7 +847,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="100" id="og6-5E-EMy" customClass="productCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="100"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="og6-5E-EMy" id="BCf-9J-3Tr">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
@@ -1037,7 +1037,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PeopleCell" rowHeight="120" id="gKv-qp-frW" customClass="PeopleCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="120"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gKv-qp-frW" id="d41-r9-rJ2">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
@@ -1403,6 +1403,18 @@
                                     <action selector="takePicturePressed:" destination="6B7-RM-OVu" eventType="touchUpInside" id="tuP-cn-KfX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2o-qM-J7A">
+                                <rect key="frame" x="230" y="458" width="70" height="40.5"/>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.6705882353" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Fotoğraf Seç">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="11"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pickupImagePressed:" destination="6B7-RM-OVu" eventType="touchUpInside" id="SiV-2K-Kox"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Yjz-nK-KCJ"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1412,8 +1424,10 @@
                             <constraint firstItem="U9g-K3-bFq" firstAttribute="centerX" secondItem="w0b-on-e3p" secondAttribute="centerX" id="99G-p0-UAm"/>
                             <constraint firstItem="Wrl-1K-n5a" firstAttribute="centerY" secondItem="w0b-on-e3p" secondAttribute="centerY" id="BqD-zP-Adr"/>
                             <constraint firstItem="fH3-uI-cM3" firstAttribute="leading" secondItem="Yjz-nK-KCJ" secondAttribute="leading" id="Dnl-7O-whl"/>
+                            <constraint firstItem="w2o-qM-J7A" firstAttribute="centerY" secondItem="U9g-K3-bFq" secondAttribute="centerY" id="H7q-KO-pE2"/>
                             <constraint firstItem="Yjz-nK-KCJ" firstAttribute="bottom" secondItem="U9g-K3-bFq" secondAttribute="bottom" constant="20" id="Lay-WX-tKm"/>
                             <constraint firstItem="Yjz-nK-KCJ" firstAttribute="trailing" secondItem="EvL-11-7pd" secondAttribute="trailing" constant="40" id="PuQ-Ld-IEO"/>
+                            <constraint firstItem="w2o-qM-J7A" firstAttribute="leading" secondItem="U9g-K3-bFq" secondAttribute="trailing" constant="20" id="WG6-Qe-g1j"/>
                             <constraint firstItem="fH3-uI-cM3" firstAttribute="top" secondItem="Yjz-nK-KCJ" secondAttribute="top" id="blb-yK-FuA"/>
                             <constraint firstAttribute="bottom" secondItem="fH3-uI-cM3" secondAttribute="bottom" id="dm5-sk-Vna"/>
                             <constraint firstItem="KgU-y3-QRB" firstAttribute="trailing" secondItem="Yjz-nK-KCJ" secondAttribute="trailing" id="eN0-e1-116"/>
@@ -1422,6 +1436,7 @@
                             <constraint firstItem="Wrl-1K-n5a" firstAttribute="trailing" secondItem="Yjz-nK-KCJ" secondAttribute="trailing" id="lsY-bL-sgc"/>
                             <constraint firstItem="fH3-uI-cM3" firstAttribute="trailing" secondItem="Yjz-nK-KCJ" secondAttribute="trailing" id="m2y-0r-v0i"/>
                             <constraint firstItem="Wrl-1K-n5a" firstAttribute="height" secondItem="w0b-on-e3p" secondAttribute="height" multiplier="0.5" id="m7f-Wk-9AV"/>
+                            <constraint firstItem="Yjz-nK-KCJ" firstAttribute="trailing" secondItem="w2o-qM-J7A" secondAttribute="trailing" constant="20" id="mml-qW-5X2"/>
                             <constraint firstItem="EvL-11-7pd" firstAttribute="centerX" secondItem="w0b-on-e3p" secondAttribute="centerX" id="wyU-LG-Ob8"/>
                             <constraint firstItem="EvL-11-7pd" firstAttribute="leading" secondItem="Yjz-nK-KCJ" secondAttribute="leading" constant="40" id="x5N-4W-zSu"/>
                         </constraints>
@@ -1432,6 +1447,7 @@
                         <outlet property="idLbl" destination="6eC-yk-y4m" id="MCk-nt-QvJ"/>
                         <outlet property="loadingView" destination="fH3-uI-cM3" id="vFE-cz-nKO"/>
                         <outlet property="nameLbl" destination="7UT-Hb-aBg" id="ySV-Xr-D5B"/>
+                        <outlet property="pickupImageButton" destination="w2o-qM-J7A" id="L4d-b8-ywd"/>
                         <outlet property="sentPopup" destination="EvL-11-7pd" id="ALo-8g-P1j"/>
                         <segue destination="nT5-cZ-vvm" kind="show" identifier="selectReason" id="IUA-vI-U8E"/>
                         <segue destination="t8B-bg-SIT" kind="show" identifier="goHome" id="Flu-ca-m5m"/>
@@ -1789,7 +1805,7 @@
                                                 <color key="separatorColor" red="0.0" green="0.6705882353" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="detailCell" rowHeight="200" id="d6m-T0-WfG" customClass="detailCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="24.5" width="335" height="200"/>
+                                                        <rect key="frame" x="0.0" y="50" width="335" height="200"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d6m-T0-WfG" id="of9-CP-mtU">
                                                             <rect key="frame" x="0.0" y="0.0" width="335" height="200"/>
@@ -1973,7 +1989,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusCell" id="9IZ-pg-Wbu" customClass="statusCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="24.5" width="295" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="295" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9IZ-pg-Wbu" id="TsQ-P8-7ro">
                                                             <rect key="frame" x="0.0" y="0.0" width="295" height="43.5"/>
@@ -2230,7 +2246,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ECommerceListCell" rowHeight="150" id="MGz-uO-Edm" customClass="ECommerceListCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="150"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MGz-uO-Edm" id="oab-tn-J71">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
@@ -2667,7 +2683,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="customerCell" rowHeight="120" id="1j2-qI-oAO" customClass="customerCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="24.5" width="288" height="120"/>
+                                                        <rect key="frame" x="0.0" y="50" width="288" height="120"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1j2-qI-oAO" id="wKD-wM-Deg">
                                                             <rect key="frame" x="0.0" y="0.0" width="288" height="120"/>
@@ -2905,7 +2921,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="shoeDetailCell" rowHeight="140" id="bGo-CM-6Xw" customClass="shoeDetailCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="24.5" width="375" height="140"/>
+                                                        <rect key="frame" x="0.0" y="50" width="375" height="140"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bGo-CM-6Xw" id="146-mr-OL5">
                                                             <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
@@ -3115,7 +3131,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusCell" id="heX-D2-BeQ" customClass="statusCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="24.5" width="295" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="295" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="heX-D2-BeQ" id="w4U-h4-VKS">
                                                             <rect key="frame" x="0.0" y="0.0" width="295" height="43.5"/>
@@ -3310,7 +3326,7 @@
                                 </constraints>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="APa-qE-zF4">
-                                <rect key="frame" x="99.5" y="60" width="121.5" height="37"/>
+                                <rect key="frame" x="102" y="60" width="116.5" height="37"/>
                                 <color key="pageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.6705882353" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
@@ -3455,7 +3471,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RepairNotesCell" rowHeight="140" id="b51-0S-Lg1" customClass="RepairNotesCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="140"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b51-0S-Lg1" id="qwR-75-VGf">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
@@ -3683,7 +3699,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RepairConcentShoeCell" rowHeight="140" id="wCJ-0N-dvf" customClass="RepairConcentShoeCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="140"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wCJ-0N-dvf" id="4m9-uD-fv1">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
@@ -4027,7 +4043,7 @@
             <objects>
                 <viewController id="0VU-cH-RR5" customClass="ShoeListForPackageViewController" customModule="TemizOperasyon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XzI-tg-hAH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y3s-PR-l7u">
@@ -4172,7 +4188,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="shoeCell" rowHeight="140" id="SLR-5i-7hU" customClass="shoeCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="24.5" width="288" height="140"/>
+                                                        <rect key="frame" x="0.0" y="50" width="288" height="140"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SLR-5i-7hU" id="5Bf-Zi-fGN">
                                                             <rect key="frame" x="0.0" y="0.0" width="288" height="140"/>
@@ -4316,7 +4332,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusCell" id="k6f-fV-0kq" customClass="statusCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="24.5" width="240" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="240" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k6f-fV-0kq" id="N3n-xp-Rm9">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
@@ -4488,7 +4504,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoreListCell" id="VUU-px-kd9" customClass="StoreListCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VUU-px-kd9" id="vnj-tA-oYE">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -4571,7 +4587,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DemageReasonCell" id="Ogi-fZ-i6z" customClass="DemageReasonCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ogi-fZ-i6z" id="pUJ-G6-sW3">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -4769,7 +4785,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="dutyCell" rowHeight="80" id="4Nu-vj-vpK" customClass="dutyCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Nu-vj-vpK" id="COq-H2-x2q">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -5580,7 +5596,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dutyChatCell" rowHeight="79" id="Ib7-Nu-GoY" customClass="dutyChatCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="24.5" width="288" height="79"/>
+                                                        <rect key="frame" x="0.0" y="50" width="288" height="79"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ib7-Nu-GoY" id="4Qx-cf-iBm">
                                                             <rect key="frame" x="0.0" y="0.0" width="288" height="79"/>
@@ -5942,7 +5958,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="dutyCell" rowHeight="80" id="ztD-UV-Cw3" customClass="dutyCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="80"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ztD-UV-Cw3" id="u54-lr-FTL">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
@@ -6082,11 +6098,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="350-DT-PRU">
-                                <rect key="frame" x="20" y="20" width="280" height="484"/>
+                                <rect key="frame" x="20" y="40" width="280" height="464"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ErrorCell" id="CU3-2M-wc9" customClass="ErrorCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="280" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="280" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CU3-2M-wc9" id="nX3-KF-2e3">
                                             <rect key="frame" x="0.0" y="0.0" width="280" height="43.5"/>
@@ -6221,7 +6237,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="100" id="GBe-MN-eml" customClass="productCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="100"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GBe-MN-eml" id="aIu-h5-S90">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
@@ -6400,7 +6416,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DemageReasonCell" id="JFT-Rh-WYd" customClass="DemageReasonCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JFT-Rh-WYd" id="ZAj-3i-eyj">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -6503,7 +6519,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DemageReasonCell" id="ogB-zM-Z2n" customClass="DemageReasonCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ogB-zM-Z2n" id="Lhh-MB-pEE">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -6716,7 +6732,7 @@
             <objects>
                 <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="xx6-eV-awp" customClass="HomePageForBagViewController" customModule="TemizOperasyon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BI8-U7-S8C">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1156"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N82-S8-5fO">
@@ -7050,7 +7066,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="dutyCell" rowHeight="80" id="dnJ-IB-NWu" customClass="dutyCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dnJ-IB-NWu" id="Qka-Xs-biw">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -7426,7 +7442,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dutySearchCell" id="Dyq-b2-Ctq" customClass="dutySearchCell" customModule="TemizOperasyon" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="24.5" width="320" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dyq-b2-Ctq" id="kIT-rR-mXG">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -7491,7 +7507,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Y1P-su-aHG"/>
-        <segue reference="C5T-7G-gxr"/>
+        <segue reference="Flu-ca-m5m"/>
         <segue reference="VUj-Lh-mdL"/>
         <segue reference="Ays-4K-0Wt"/>
         <segue reference="Pwc-ei-tBp"/>
@@ -7499,7 +7515,7 @@
         <segue reference="jr4-Io-yb8"/>
         <segue reference="he1-zj-5gm"/>
         <segue reference="Bpq-uN-Dql"/>
-        <segue reference="JMN-Sl-N13"/>
+        <segue reference="AIZ-MH-HWW"/>
         <segue reference="3ZJ-9x-Qt5"/>
         <segue reference="lGo-Hi-6zg"/>
     </inferredMetricsTieBreakers>
