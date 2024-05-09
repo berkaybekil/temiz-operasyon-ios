@@ -2405,7 +2405,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Hb0-bg-dns" secondAttribute="trailing" constant="8" id="uw8-4X-TJ4"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bM-8W-Idt">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bM-8W-Idt">
                                 <rect key="frame" x="20" y="105" width="280" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bölge Seç" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ecK-44-U2w">
@@ -2434,7 +2434,7 @@
                                     <constraint firstItem="ecK-44-U2w" firstAttribute="top" secondItem="8bM-8W-Idt" secondAttribute="top" id="ruR-Bm-bt6"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVG-EN-ei6">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVG-EN-ei6">
                                 <rect key="frame" x="20" y="220" width="280" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Saat Seç" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vaK-XI-fLo">
@@ -2464,7 +2464,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGm-nz-KA4">
-                                <rect key="frame" x="20" y="285" width="280" height="45"/>
+                                <rect key="frame" x="20" y="105" width="280" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.6705882353" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="IOk-pG-JUp"/>
@@ -2494,13 +2494,13 @@
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2cy-zY-eSt" firstAttribute="top" secondItem="8bM-8W-Idt" secondAttribute="bottom" constant="20" id="3vh-Vs-V3L"/>
+                            <constraint firstItem="lGm-nz-KA4" firstAttribute="top" secondItem="LdC-xu-qZ8" secondAttribute="bottom" constant="20" id="5CW-GD-Ncd"/>
                             <constraint firstItem="LdC-xu-qZ8" firstAttribute="top" secondItem="F2V-sA-mIc" secondAttribute="top" constant="40" id="6q2-51-rus"/>
                             <constraint firstItem="LdC-xu-qZ8" firstAttribute="leading" secondItem="F2V-sA-mIc" secondAttribute="leading" constant="20" id="8cO-fc-Z8t"/>
                             <constraint firstItem="8bM-8W-Idt" firstAttribute="top" secondItem="LdC-xu-qZ8" secondAttribute="bottom" constant="20" id="8tS-bW-Rdr"/>
                             <constraint firstItem="lGm-nz-KA4" firstAttribute="leading" secondItem="F2V-sA-mIc" secondAttribute="leading" constant="20" id="9hG-1s-Gen"/>
                             <constraint firstItem="2cy-zY-eSt" firstAttribute="leading" secondItem="F2V-sA-mIc" secondAttribute="leading" constant="20" id="CDl-h4-4St"/>
                             <constraint firstItem="F2V-sA-mIc" firstAttribute="trailing" secondItem="lGm-nz-KA4" secondAttribute="trailing" constant="20" id="J3u-xb-ZO6"/>
-                            <constraint firstItem="lGm-nz-KA4" firstAttribute="top" secondItem="JVG-EN-ei6" secondAttribute="bottom" constant="20" id="NiR-bw-Jp2"/>
                             <constraint firstItem="5Ji-Fl-xai" firstAttribute="leading" secondItem="2cy-zY-eSt" secondAttribute="trailing" constant="10" id="URE-Dl-Uk2"/>
                             <constraint firstItem="8bM-8W-Idt" firstAttribute="leading" secondItem="F2V-sA-mIc" secondAttribute="leading" constant="20" id="W9h-C3-aGp"/>
                             <constraint firstItem="F2V-sA-mIc" firstAttribute="trailing" secondItem="LdC-xu-qZ8" secondAttribute="trailing" constant="20" id="WhC-Xl-uRA"/>
@@ -7506,8 +7506,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="p4h-Ba-gPe"/>
         <segue reference="Y1P-su-aHG"/>
-        <segue reference="Flu-ca-m5m"/>
+        <segue reference="0Te-E2-5dw"/>
         <segue reference="VUj-Lh-mdL"/>
         <segue reference="Ays-4K-0Wt"/>
         <segue reference="Pwc-ei-tBp"/>

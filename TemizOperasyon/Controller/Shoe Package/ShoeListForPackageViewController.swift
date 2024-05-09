@@ -50,6 +50,7 @@ class ShoeListForPackageViewController: UIViewController, UITableViewDelegate, U
         statusPicker.dataSource = self
         
         adjustViews()
+        adjustToolBar()
 
     }
     

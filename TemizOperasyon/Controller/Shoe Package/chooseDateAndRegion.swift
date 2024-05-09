@@ -32,8 +32,8 @@ class chooseDateAndRegion: UIViewController, UIPickerViewDelegate, UIPickerViewD
     var regionPicker = UIPickerView()
     
     // Arrays
-    var hours = ["Seçiniz", "Sabah","Akşam", "E-Ticaret"]
-    var regions = ["Seçiniz", "Anadolu","Avrupa", "Üsküdar", "Kargo", "Bakırköy", "Nike"]
+    var hours = ["Hepsi", "Sabah","Akşam", "E-Ticaret"]
+    var regions = ["Hepsi", "Anadolu","Avrupa", "Üsküdar", "Kargo", "Bakırköy", "Nike"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,13 +82,11 @@ class chooseDateAndRegion: UIViewController, UIPickerViewDelegate, UIPickerViewD
             // Fallback on earlier versions
         }
         
-        let dateStart = NSDate.init(timeIntervalSince1970: 1609489837)
-        let dateEnd = NSDate.init(timeIntervalSince1970: 1640995200)
+        let todayTimeStamp = NSDate().timeIntervalSince1970
+
+        let dateStart = NSDate.init(timeIntervalSince1970: todayTimeStamp)
         
         datePicker.minimumDate = dateStart as Date
-        datePicker.maximumDate = dateEnd as Date
-        
-        
         
         
         let toolbar = UIToolbar()
@@ -248,14 +246,11 @@ class chooseDateAndRegion: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     @IBAction func submitPressed(_ sender: Any) {
         
-        print("istediğim \(regionField.text)")
-        
-        
         if hourField.text == "E-Ticaret" {
             
             
                 
-            if dateField.text == "" || regionField.text == "" || hourField.text == "" {
+            if dateField.text == "" {
                 showFieldAlert()
             } else {
                 DataManager.shoeOrderListDate = dateField.text!
@@ -268,7 +263,7 @@ class chooseDateAndRegion: UIViewController, UIPickerViewDelegate, UIPickerViewD
             
         } else {
             
-            if dateField.text == "" || regionField.text == "" || hourField.text == "" {
+            if dateField.text == "" {
                 
                 
                 showFieldAlert()
@@ -279,6 +274,8 @@ class chooseDateAndRegion: UIViewController, UIPickerViewDelegate, UIPickerViewD
                 DataManager.shoeOrderListDate = dateField.text!
                 DataManager.shoeOrderListArea = regionField.text!
                 DataManager.shoeOrderListType = hourField.text!
+                
+                print("sent data = \(DataManager.shoeOrderListDate), \(DataManager.shoeOrderListArea), \(DataManager.shoeOrderListType)")
                 
                 performSegue(withIdentifier: "goList", sender: nil)
                 
